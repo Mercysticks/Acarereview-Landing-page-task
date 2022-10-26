@@ -1,0 +1,52 @@
+.info-card{
+    margin:0 auto;
+    width:90%;
+    @include breakpoint(980px){
+        @include flex;
+        width:70%;
+        margin:0 auto;
+        gap:40px;
+    &__one{
+        background: #ffd054d9;
+        border-radius: $card;
+    }
+    &__two{
+        background-color: #0e025cbf;
+        border-radius: $card;
+    }
+    &__three{
+        background-color: green;
+        border-radius: $card;
+    }
+    &__text{
+        text-align:left;
+        padding: 40px;;
+        border-radius:0 0 32px 32px;
+    }
+    &__rating{
+        display: flex;
+        align-items: center;
+        gap:16px;
+    }
+    &__rating-icon{
+        display:inline-block;
+        width:30%;
+        height:10%;
+    }
+    &__rating-amount{
+        margin-top:1em;
+    }
+    &__emoji{
+        display:flex;
+        align-items: center;
+        gap:3em;
+        
+    } 
+    &__rating-text{
+        color:$card-text;
+    }
+    &__title--active{
+        color:$card-text;
+    }
+}
+}

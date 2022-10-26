@@ -1,0 +1,54 @@
+.container{
+    @include breakpoint(980px){
+        @include flex;
+        margin:auto;
+        width:80%;
+        gap:2rem;
+        :hover{
+            transform:translateY(-4px);
+            transition: all 0.3s ease;
+        }
+    }
+    &__box{
+        width:50%;
+        text-align:center;
+        padding:2em;
+        border-radius:18.86px ;
+        margin: 2em auto;
+        @include breakpoint(980px){
+            height: 346px;
+            width:360.14px;
+            box-shadow: 4px 4px 10px #FFEFDF;
+        }
+    }
+    &__box--one{
+        background: rgba(254, 227, 207, 0.5);
+    }
+    &__box--two{
+        background: rgba(79, 146, 182, 0.95);
+        color:rgba(238, 230, 220, 0.9);
+        @include breakpoint(980px){
+            height: 382px;
+            width: 367px;
+        }
+    }
+    &__box--three{
+        background: rgba(254, 227, 207, 0.5);
+    }
+    &__icon{
+        margin: auto;
+        display: block;
+        width: 40%;
+    }
+    &__header{
+        @include breakpoint(980px){
+            margin-top:  5rem;
+            font-size: 2.2rem;
+        }
+    }
+    &__desc{
+        @include breakpoint(980px){
+            font-size: 1.4rem;
+        }
+    }
+}

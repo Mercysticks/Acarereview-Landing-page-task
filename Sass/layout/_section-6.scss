@@ -1,0 +1,38 @@
+.section-6{
+    margin:auto;
+    font-size: 16px;
+    background: rgba(163, 142, 129, 0.1);
+    padding: 48px;
+    @include breakpoint(980px){
+        @include flex;
+        margin-bottom: 32px;
+        margin: auto;
+        padding: 64px;
+        gap:250px;
+    }
+    &__image{
+        @include breakpoint(980px){
+            width:25%;
+        }
+    }
+    &__textBox{
+        @include breakpoint(980px){
+            width: 576px;
+            text-align: left;
+            padding: 0;
+            font-size: 28px;
+        }
+    }
+    &__quote::before{
+        content: '"';
+        font-weight: 500;
+        font-size: 72px;
+    }
+    &__quote::after{
+        content: '"';
+        font-weight: 500;
+        font-size: 72px;
+    }
+
+    
+}

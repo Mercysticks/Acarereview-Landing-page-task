@@ -1,0 +1,33 @@
+.section-4{
+    @include breakpoint(980px){
+        @include flex;
+        flex-direction: row-reverse;
+        width:100%;
+        margin: auto;
+        gap:70px;
+    }
+    &__cover-img{
+        background: url('Asset\Frame 92.png')no-repeat center center;
+        background-size: contain;
+        width:40%;
+        margin: auto;
+        @include breakpoint(980px){
+            margin:0;
+        }
+    }
+    &__text-box{
+        text-align:center;
+        padding:4em;
+        @include breakpoint(980px){
+            @include section-desc;
+            text-align: left;
+            padding:0;
+            margin-bottom: 150px;
+            @include section-title;
+        }
+    }
+    &__title{
+        font-size:$title-font;
+        transform: $custom-transform;
+    }
+}

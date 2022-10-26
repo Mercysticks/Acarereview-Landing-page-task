@@ -1,0 +1,67 @@
+
+.navbar{
+    position: absolute;
+    text-align: center;
+    top:100%;
+    right:0;
+    background-color: $nav;
+    width:100%;
+    transform: scale(1,0);
+    transform-origin: top;
+    transition: transform 0.4s ease-in-out;
+    @include breakpoint(980px) {
+        all: unset;
+        font-size: 18px;
+    }
+    &__items{
+        list-style: none;
+        @include breakpoint(980px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
+    }
+    &__list{
+        margin-bottom:1em;
+        margin-right:1em;
+    }
+    &__link{
+        text-decoration: none;
+        font-size:18px;
+        color:$secondary;
+    }
+    &__link:hover{
+        text-decoration: underline 2px;
+    }
+    &__toggle{
+        display:none;
+    }
+    &__toggle:checked~.navbar{
+        transform:scale(1,1);
+    }
+    &__toggle:checked~.navbar__link{
+        opacity:1;
+    }
+    &__toggle--label{
+        position:absolute;
+        top:0;
+        right:0;
+        margin-right: 1em;
+        height:100%;
+        @include flex;
+    }
+}
+
+.active{
+    display:block;
+    @include breakpoint(980px){
+        display:none;
+    }
+}
+.hidden{
+    display:none;
+    @include breakpoint(980px){
+        display:none;
+    }
+}

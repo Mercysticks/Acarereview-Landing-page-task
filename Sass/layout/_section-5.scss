@@ -1,0 +1,39 @@
+.section-5{
+    text-align:center;
+    @include breakpoint(980px){
+        width:100%;
+        margin-top:250px;
+        margin-bottom: 70px;
+    }
+
+&__arrow-container{
+    display:none;
+    @include breakpoint(980px){
+        @include flex;
+        gap:32px;
+        margin-left: 240px;
+    }
+}
+&__arrow-one{
+    @include breakpoint(980px){
+        width:38px;
+        height:38px;
+    }
+}
+&__arrow-two{
+    @include breakpoint(980px){
+        width:58px;
+        height:58px;
+    }
+}
+}
+
+.text-box{
+    @include breakpoint(980px){
+        @include flex;
+    }
+}
+.title{
+    font-size: $title-font;
+}
+

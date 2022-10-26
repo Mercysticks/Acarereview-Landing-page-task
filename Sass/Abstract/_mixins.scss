@@ -1,0 +1,36 @@
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin breakpoint($bp:0) {
+    @media(min-width:$bp) {
+        @content;
+    }
+}
+
+@mixin media($query:0){
+    @media(max-width:$query) {
+        @content;
+    }
+}
+
+@mixin hover{
+    transform:translateY(-2px);
+    transition: all 0.5s ease;
+    background-color: $color;
+}
+
+@mixin section-title{
+    width: 501px;
+    height: 80px;
+}
+@mixin section-desc {
+    width:527px;
+    height:100px;
+    font-size: $description-font;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    
+}

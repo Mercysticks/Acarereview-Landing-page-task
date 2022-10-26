@@ -1,0 +1,44 @@
+
+.section-1{
+    text-align: center;
+    font-size:19.2px;
+    padding:8px;
+    @include breakpoint(980px){
+        margin-bottom:10rem;
+        text-align: left;
+    }
+    &__title{
+        font-size:3rem;
+        @include breakpoint(980px) {
+            font-size: 72px;
+            width: 568px;
+            padding:0;
+            margin:80px;
+            margin-left: 32px;
+        }
+    }
+    &__title--active-1{
+        color:$header;
+    }
+    &__title--active-2{
+        color:$secondary;
+    }
+    &__desc{
+        @include breakpoint(980px) {
+            font-style: normal;
+            font-weight: 500;
+            line-height: 29px;
+            letter-spacing: 0.01em;
+            width: 643px;
+            margin-left:32px;
+            font-size:24px;
+        }
+    }
+    &__store{
+        @include breakpoint(980px){
+            margin-left:8rem;
+            margin-top: 4rem;
+        }
+        
+    }
+}

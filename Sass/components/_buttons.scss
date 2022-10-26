@@ -1,0 +1,31 @@
+.btn{
+    background-color: $btn;
+    border: none;
+}
+.btn--small{
+    box-shadow:0px 0.5px 3px $primary;
+    border-radius: 5px;
+    padding:12px 20px;
+}
+.section-1__download{
+    display:inline-block;
+    width: 19rem;
+    @include breakpoint(980px){
+        width:271px;
+
+    }
+}
+.btn--medium{
+    box-shadow: 0px 0.5px 3px rgba(51,39,0,0.5);
+    border-radius: $btn-br;
+    padding:15px 35px;
+    font-size: $btn-font;
+    color: $primary;
+    margin-top:35px;
+}
+.btn--medium:hover{
+    @include hover;
+}
+.btn--small:hover{
+    @include hover;
+}

@@ -1,0 +1,75 @@
+.section-2{
+    text-align:center;
+    &__container{
+        @include breakpoint(980px){
+            text-align: center;
+            width:50%;
+            margin:auto;
+        }
+    }
+    &__title{
+        @include breakpoint(980px){
+            font-size:3.2rem;
+        }
+    }
+    &__desc{
+        @include breakpoint(980px){
+            font-size:2rem;
+        }
+    }
+    &__search-bar{
+        @include flex;
+        padding:1em;
+        background-color:rgba(196, 196, 196, 0.6);
+        @include breakpoint(980px){
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 64px;
+        }
+    }
+    &__select{
+        border-radius: 1rem 0 0 1rem;
+        background-color:$bg-color ;
+        border:none;
+        padding:2rem;
+       }
+       &__input{
+        width:70%;
+        padding:2rem;
+        border:none;
+        background-color: $bg-color;
+       }
+       &__search--btn{
+        @include breakpoint(980px){
+            padding-right: 6rem;
+            border:none;
+        }
+       }
+       &__vector{
+        @include breakpoint(980px){
+            height:17px;
+            height:17px;
+            border-radius: 0px 0px 10px 10px;
+        }
+       }
+       &__ellipses{
+        display:none;
+        @include breakpoint(980px){
+            @include flex;
+            margin:auto;
+            gap: 32px;
+            margin-top: 30px;
+            margin-bottom: 128px;
+        }
+       }
+       &__balls{
+        display: block;
+        width:10px;
+        height:10px;
+        border-radius: 50%;
+        border: 2px solid $ball-bg;
+       }
+       &__balls--active{
+        background-color:$ball-bg;
+       }
+}

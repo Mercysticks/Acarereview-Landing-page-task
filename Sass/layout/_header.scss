@@ -1,0 +1,28 @@
+.header{
+    background:linear-gradient(to bottom,rgba(255,251,240,0.6),rgba(255,251,240,0.9)), url('/Asset/picture-1.png')no-repeat center center;
+    background-size:cover;
+    padding-top:16px;
+    @include breakpoint(980px){
+        padding:3rem;
+        background:linear-gradient(to right,rgba(255,251,240),rgba(255,251,240,0.1)), url('/Asset/picture-1.png')no-repeat center center;
+        background-size: 100% 100%;
+    }
+    &__head{
+        text-align:center;
+        width:100%;
+        position:relative;
+        @include breakpoint(980px) {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            font-size: $logo-font;
+        }
+    }
+    &__logo{
+        text-align: left;
+        margin-left: 16px;
+        @include breakpoint(980px) {
+            margin-right:auto;
+        }
+    }
+}
